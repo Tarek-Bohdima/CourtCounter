@@ -8,14 +8,32 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     int scoreTeamA = 0;
     int scoreTeamB = 0;
+    static final String SCORE_TEAMA = "scoreTeamA";
+    static final String SCORE_TEAMB = "scoreTeamB";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        displayForTeamA(0);
     }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        scoreTeamA = savedInstanceState.getInt(SCORE_TEAMA);
+        scoreTeamB = savedInstanceState.getInt(SCORE_TEAMB);
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(SCORE_TEAMA, scoreTeamA);
+        outState.putInt(SCORE_TEAMB, scoreTeamB);
+    }
+
     /**
      * Reset score for Team A and Team B
      */
