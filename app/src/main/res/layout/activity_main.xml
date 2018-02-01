@@ -15,6 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
             android:background="@android:color/holo_orange_light"
             android:onClick="reset"
             android:text="@string/reset_button_text" />
@@ -87,7 +88,7 @@
             <LinearLayout
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="32dp"
+                android:layout_marginBottom="46dp"
                 android:layout_marginTop="16dp"
                 android:background="@android:color/darker_gray"></LinearLayout>
 

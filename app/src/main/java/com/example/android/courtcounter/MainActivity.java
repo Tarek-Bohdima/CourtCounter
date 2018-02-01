@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    int scoreTeamA = 0;
+    int scoreTeamA = 0 ;
     int scoreTeamB = 0;
     static final String SCORE_TEAMA = "scoreTeamA";
     static final String SCORE_TEAMB = "scoreTeamB";
