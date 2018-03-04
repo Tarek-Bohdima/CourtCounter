@@ -62,6 +62,25 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/button_layout_margin"
                     android:layout_marginRight="@dimen/button_layout_margin"
+                    android:onClick="addFoulForTeamA"
+                    android:text="@string/add_foul" />
+
+                <TextView
+                    android:id="@+id/team_a_fouls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="@string/initial_value_0"
+                    android:textColor="@color/fouls"
+                    android:textSize="@dimen/fouls" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/button_layout_margin"
+                    android:layout_marginRight="@dimen/button_layout_margin"
                     android:layout_marginTop="@dimen/button_layout_margin"
                     android:onClick="addThreeForTeamA"
                     android:text="@string/add_3_points" />
@@ -83,6 +102,8 @@
                     android:layout_marginRight="@dimen/button_layout_margin"
                     android:onClick="addOneForTeamA"
                     android:text="@string/free_throw" />
+
+
             </LinearLayout>
 
             <LinearLayout
@@ -92,6 +113,7 @@
                 android:background="@android:color/darker_gray"></LinearLayout>
 
             <LinearLayout
+
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -119,6 +141,25 @@
                     android:text="@string/initial_value_0"
                     android:textColor="@color/score"
                     android:textSize="@dimen/score" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/button_layout_margin"
+                    android:layout_marginRight="@dimen/button_layout_margin"
+                    android:onClick="addFoulForTeamB"
+                    android:text="@string/add_foul" />
+
+                <TextView
+                    android:id="@+id/team_b_fouls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="@string/initial_value_0"
+                    android:textColor="@color/fouls"
+                    android:textSize="@dimen/fouls" />
 
                 <Button
                     android:layout_width="match_parent"

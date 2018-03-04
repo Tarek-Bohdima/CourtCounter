@@ -8,8 +8,12 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     int scoreTeamA = 0 ;
     int scoreTeamB = 0;
+    int foulTeamA = 0;
+    int foulTeamB = 0;
     static final String SCORE_TEAMA = "scoreTeamA";
     static final String SCORE_TEAMB = "scoreTeamB";
+    static final String FOUL_TEAMA = "foulTeamA";
+    static final String FOUL_TEAMB = "foulTeamB";
 
 
     @Override
@@ -23,8 +27,12 @@ public class MainActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         scoreTeamA = savedInstanceState.getInt(SCORE_TEAMA);
         scoreTeamB = savedInstanceState.getInt(SCORE_TEAMB);
+        foulTeamA = savedInstanceState.getInt(FOUL_TEAMA);
+        foulTeamB = savedInstanceState.getInt(FOUL_TEAMB);
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
+        displayFoulsForTeamA(foulTeamA);
+        displayFoulsForTeamB(foulTeamB);
     }
 
     @Override
@@ -32,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         outState.putInt(SCORE_TEAMA, scoreTeamA);
         outState.putInt(SCORE_TEAMB, scoreTeamB);
+        outState.putInt(FOUL_TEAMA,foulTeamA);
+        outState.putInt(FOUL_TEAMB,foulTeamB);
     }
 
     /**
@@ -40,8 +50,12 @@ public class MainActivity extends AppCompatActivity {
     public void reset(View v) {
         scoreTeamA = 0;
         scoreTeamB = 0;
+        foulTeamA = 0;
+        foulTeamB = 0;
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
+        displayFoulsForTeamA(foulTeamA);
+        displayFoulsForTeamB(foulTeamB);
     }
 
     /**
@@ -68,6 +82,15 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamA = scoreTeamA + 3;
         displayForTeamA(scoreTeamA);
     }
+
+    /**
+     * Increase the foul for Team A by 1 point.
+     */
+    public void addFoulForTeamA(View v) {
+        foulTeamA = foulTeamA + 1;
+        displayFoulsForTeamA(foulTeamA);
+
+    }
     /**
      * Increase the score for Team B by 1 point.
      */
@@ -90,6 +113,15 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamB(scoreTeamB);
     }
 
+    /**
+     * Increase the foul for Team B by 1 point.
+     */
+    public void addFoulForTeamB(View v) {
+        foulTeamB = foulTeamB + 1;
+        displayFoulsForTeamB(foulTeamB);
+
+    }
+
 
     /**
      * Displays the given score for Team A.
@@ -98,11 +130,27 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
+
+    /**
+     * Displays the given fouls for Team A.
+     */
+    public void displayFoulsForTeamA(int fouls) {
+        TextView foulsView = (TextView) findViewById(R.id.team_a_fouls);
+        foulsView.setText(String.valueOf(fouls));
+    }
     /**
      * Displays the given score for Team B.
      */
     public void displayForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
+    }
+
+    /**
+     * Displays the given score for Team B.
+     */
+    public void displayFoulsForTeamB(int fouls) {
+        TextView foulsView = (TextView) findViewById(R.id.team_b_fouls);
+        foulsView.setText(String.valueOf(fouls));
     }
 }

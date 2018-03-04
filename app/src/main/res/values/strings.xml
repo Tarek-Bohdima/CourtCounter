@@ -7,4 +7,6 @@
     <string name="add_3_points">+3 Points</string>
     <string name="add_2_points">+2 Points</string>
     <string name="free_throw">Free Throw</string>
+    <string name="fouls">Fouls</string>
+    <string name="add_foul">Foul</string>
 </resources>
