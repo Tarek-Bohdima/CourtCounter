@@ -23,8 +23,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
+            android:layout_height="wrap_content"
+            
             android:orientation="horizontal">
 
 
@@ -55,13 +55,13 @@
                     android:padding="4dp"
                     android:text="@string/initial_value_0"
                     android:textColor="@color/score"
-                    android:textSize="@dimen/score" />
+                    android:textSize="42sp" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/button_layout_margin"
-                    android:layout_marginRight="@dimen/button_layout_margin"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="64dp"
                     android:onClick="addFoulForTeamA"
                     android:text="@string/add_foul" />
 
@@ -74,13 +74,13 @@
                     android:padding="4dp"
                     android:text="@string/initial_value_0"
                     android:textColor="@color/fouls"
-                    android:textSize="@dimen/fouls" />
+                    android:textSize="24sp" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/button_layout_margin"
-                    android:layout_marginRight="@dimen/button_layout_margin"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="64dp"
                     android:layout_marginTop="@dimen/button_layout_margin"
                     android:onClick="addThreeForTeamA"
                     android:text="@string/add_3_points" />
@@ -89,8 +89,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/button_layout_margin_short"
-                    android:layout_marginLeft="@dimen/button_layout_margin"
-                    android:layout_marginRight="@dimen/button_layout_margin"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="64dp"
                     android:layout_marginTop="@dimen/button_layout_margin_short"
                     android:onClick="addTwoForTeamA"
                     android:text="@string/add_2_points" />
@@ -98,8 +98,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/button_layout_margin"
-                    android:layout_marginRight="@dimen/button_layout_margin"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="64dp"
                     android:onClick="addOneForTeamA"
                     android:text="@string/free_throw" />
 
@@ -110,7 +110,7 @@
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
-                android:layout_marginBottom="116dp"
+                android:layout_marginBottom="54dp"
                 android:background="@android:color/darker_gray"/>
 
             <LinearLayout
@@ -141,13 +141,13 @@
                     android:padding="@dimen/title_padding"
                     android:text="@string/initial_value_0"
                     android:textColor="@color/score"
-                    android:textSize="@dimen/score" />
+                    android:textSize="42sp" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/button_layout_margin"
-                    android:layout_marginRight="@dimen/button_layout_margin"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="64dp"
                     android:onClick="addFoulForTeamB"
                     android:text="@string/add_foul" />
 
@@ -160,13 +160,13 @@
                     android:padding="4dp"
                     android:text="@string/initial_value_0"
                     android:textColor="@color/fouls"
-                    android:textSize="@dimen/fouls" />
+                    android:textSize="24sp" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/button_layout_margin"
-                    android:layout_marginRight="@dimen/button_layout_margin"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="64dp"
                     android:layout_marginTop="@dimen/button_layout_margin"
                     android:onClick="addThreeForTeamB"
                     android:text="@string/add_3_points" />
@@ -175,8 +175,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/button_layout_margin_short"
-                    android:layout_marginLeft="@dimen/button_layout_margin"
-                    android:layout_marginRight="@dimen/button_layout_margin"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="64dp"
                     android:layout_marginTop="@dimen/button_layout_margin_short"
                     android:onClick="addTwoForTeamB"
                     android:text="@string/add_2_points" />
@@ -184,8 +184,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/button_layout_margin"
-                    android:layout_marginRight="@dimen/button_layout_margin"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="64dp"
                     android:onClick="addOneForTeamB"
                     android:text="@string/free_throw" />
 

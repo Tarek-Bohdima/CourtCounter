@@ -1,12 +1,12 @@
 package com.example.android.courtcounter;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    int scoreTeamA = 0 ;
+    int scoreTeamA = 0;
     int scoreTeamB = 0;
     int foulTeamA = 0;
     int foulTeamB = 0;
